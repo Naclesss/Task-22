@@ -1,0 +1,83 @@
+* {box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+section {
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+#first-section {
+display: flex;
+gap: 20px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 330px;
+height: 390px;
+border: 1px solid rgb(204, 204, 204);
+margin-bottom: 10px;
+}
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+justify-content: center;
+
+}
+.or-part::before,
+.or-part::after {
+display: inline-block;
+content: "";
+border-top: 0.05rem solid rgb(204, 204, 204);
+border-radius: 10px;
+width: 4.5rem;
+margin: 0px 15px;
+transform: translateY(-0.3rem);
+}
+.log-in-with {
+display: flex;
+gap: 6px;
+}
+.sign-up-section {
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid rgb(204, 204, 204);
+width: 330px;
+height: 8%;
+
+}
+input {
+    padding: 8px;
+width: 280px;
+height: 36px;
+border: 1px solid rgb(204, 204, 204);
+cursor: pointer;
+}
+input:last-child {
+border: none;
+background-color: #4CB5F9;
+color: white;
+}
+.sign-up-section span {
+color: #4CB5F9;
+}
+@media (min-width:430px) and (max-width:550px){
+input {
+    width: 285px;
+  
+}
+}
+@media (max-width:430px){
+.sign-up-section,.login-section {
+    border: none;
+}
+input {
+    width: 290px;
+    height: 40px;
+}
+}
